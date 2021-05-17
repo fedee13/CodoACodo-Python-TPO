@@ -6,4 +6,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
       const togglerClasses = toggler.classList;
       togglerClasses.toggle("collapsed");
     });
+
+  document
+    .getElementById("footer")
+    .insertAdjacentHTML(
+      "afterbegin",
+      '<p><a href="https://github.com/fedee13" target="_blank"><i class="fa fa-github"></i> Federico Pandullo</a></p>'
+    );
 });
