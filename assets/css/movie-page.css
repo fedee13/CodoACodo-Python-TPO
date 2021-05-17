@@ -1,0 +1,136 @@
+.background-movie {
+  background-image: url("https://fastly.syfy.com/sites/syfy/files/styles/1200x680/public/2019/07/lord-of-the-rings-fellowship-of-the-ring-council_0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  Z-INDEX: -1;
+  filter: blur(10px);
+}
+
+.movie-page {
+  background-color: #3e3e3e;
+}
+
+.movie-page .movie-shortcuts {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.movie-page .movie-shortcuts a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.movie-page .movie-shortcuts span {
+  opacity: 0.8;
+}
+
+.movie-page .movie-header {
+  padding: 1rem;
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .movie-page .movie-header {
+    flex-direction: column;
+  }
+}
+
+.movie-page .movie-header .movie-header-poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+
+@media (max-width: 768px) {
+  .movie-page .movie-header .movie-header-poster {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.movie-page .movie-header .movie-header-info {
+  flex-grow: 1;
+}
+
+@media (max-width: 768px) {
+  .movie-page .movie-header .movie-header-info {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+.movie-page .movie-header .movie-header-info .embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+}
+
+.movie-page .movie-header .movie-header-info .embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-page .movie-header .movie-header-info .movie-header-rating a {
+  color: #fff;
+}
+
+.movie-page .movie-description {
+  background-color: #f0f0f0;
+  color: black;
+  padding: 1rem;
+}
+
+.movie-page .movie-description p {
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.movie-page .movie-actors {
+  border-top: 2px solid #fff;
+}
+
+.movie-page .movie-reviews {
+  border-top: 2px solid #fff;
+  padding: 1rem;
+}
+
+.movie-page .movie-reviews h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.movie-page .movie-reviews .movie-review p {
+  line-height: 1.5rem;
+  margin-top: 0;
+}
+
+.movie-page .movie-reviews .movie-review:not(:last-child) {
+  border-bottom: 1px #fff solid;
+  margin-bottom: 10px;
+}
+
+.movie-page .movie-reviews .movie-review .movie-review-header i.fa {
+  font-size: 0.8rem;
+}
+
+.movie-page .movie-reviews .movie-review .movie-review-header .movie-review-title h4 {
+  display: inline;
+}
+
+.movie-page .movie-reviews .movie-review .movie-review-header .movie-review-date {
+  font-size: 0.8rem;
+  margin-right: 5px;
+}
+
+.movie-page .movie-reviews .movie-review .movie-review-header .movie-review-user {
+  margin-left: 5px;
+}

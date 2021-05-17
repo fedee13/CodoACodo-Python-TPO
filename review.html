@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CaCMD | Evaluación</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/291bef186b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="./assets/css/review-page.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap-alert.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <nav>
+      <label id="navToggle" for="navbar-toggle" class="menu-burger ml-20">
+        <i class="fa fa-bars fa-2x"></i>
+      </label>
+      <ul class="menu-left">
+        <li><a href="/">Películas</a></li>
+        <li><a href="/contact.html">Contacto</a></li>
+      </ul>
+      <a href="/" class="logo" title="logo">
+        <img class="img-responsive" src="./assets/img/codo-a-codo.png" alt="Codo a Codo">
+        <span>Movies database</span>
+      </a>
+    </nav>
+  </div>
+  <main class="container">
+    <div class="movie-review">
+      <section class="movie-review-info">
+        <div class="movie-review-poster">
+          <img class="img-responsive" src="https://via.placeholder.com/150x200" alt="poster pelicula">
+        </div>
+        <h2>El título de la película</h2>
+      </section>
+      <form id="formMovieReview" class="movie-review-form" method="GET" action="./show_data.html">
+        <fieldset>
+          <legend>Evaluación</legend>
+          <label for="movieRating">Calificación</legend>
+            <div class="movie-review-rating">
+              <div class="movie-review-rate mr-20">
+                <input type="radio" name="movieRating" value="1" required />
+                <label for="movieRating"><i class="fa fa-star text-yellow"></i></label>
+              </div>
+              <div class="movie-review-rate mr-20">
+                <input type="radio" name="movieRating" value="2" />
+                <label for="movieRating">
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                </label>
+              </div>
+              <div class="movie-review-rate mr-20">
+                <input type="radio" name="movieRating" value="3" />
+                <label for="movieRating">
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                </label>
+              </div>
+              <div class="movie-review-rate mr-20">
+                <input type="radio" name="movieRating" value="4" />
+                <label for="movieRating">
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                </label>
+              </div>
+              <div class="movie-review-rate mr-20">
+                <input type="radio" name="movieRating" value="5" />
+                <label for="movieRating">
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                  <i class="fa fa-star text-yellow"></i>
+                </label>
+              </div>
+            </div>
+            <div class="mt-20">
+              <label for="movieTitle">Título</label>
+              <input type="text" name="movieTitle" id="movieTitle" required maxlength="100" minlength="5">
+            </div>
+            <div class="mt-20">
+              <label>Opinión</label>
+              <textarea name="movieReview" id="movieReview" rows="6" required maxlength="1000" minlength="5"></textarea>
+            </div>
+        </fieldset>
+        <div class="alert alert-warning" role="alert">
+          <i class="fa fa-warning"></i> Todos los campos del formulario son <strong>obligatorios</strong>
+        </div>
+        <button id="btnSubmit" type="submit">Enviar</button>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p><a href="https://github.com/fedee13" target="_blank"><i class="fa fa-github"></i> Federico Pandullo</a></p>
+  </footer>
+  <script src="./assets/scripts/index.js"></script>
+</body>
+
+</html>

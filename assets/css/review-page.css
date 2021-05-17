@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-review {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+form {
+  margin-top: 0;
+}
+
+.movie-review-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3e3e3e;
+  padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .movie-review-info {
+    flex-direction: column;
+  }
+}
+
+.movie-review-info .movie-review-poster {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+@media (max-width: 768px) {
+  .movie-review-info .movie-review-poster {
+    width: auto;
+  }
+}
+
+.movie-review-form {
+  margin-bottom: 5px;
+  background-color: #3e3e3e;
+  padding: 1rem;
+}
+
+.movie-review-form fieldset {
+  margin-bottom: 20px;
+  border-radius: 0.5rem;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.movie-review-form input[type="text"] {
+  padding: 8px;
+  width: 100%;
+  display: block;
+  border: 2px solid #eee;
+  letter-spacing: 0.5px;
+}
+
+.movie-review-form textarea {
+  width: 100%;
+  display: block;
+  border: 2px solid #eee;
+  letter-spacing: 0.5px;
+  resize: vertical;
+}
+
+.movie-review-form #btnSubmit {
+  width: 100%;
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #fbcc00;
+  border-color: #fbcc00;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.movie-review-form #btnSubmit:hover {
+  background-color: #e2b700;
+  border-color: #e2b700;
+  box-shadow: 2px 2px 3px 0px #787878;
+}
+
+.movie-review-rating {
+  display: flex;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .movie-review-rating {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-review-rating .movie-review-rate {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+
+.alert {
+  text-align: center;
+}
+
+.alert .fa {
+  font-size: 1.5rem;
+}
