@@ -46,18 +46,17 @@ const peliculas = [
   },
 ];
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  let movieContainer = document.getElementById("movieContainer");
+// let movieContainer = document.getElementById("movieContainer");
 
-  peliculas.forEach((pelicula) => {
-    let colorRating = "green";
-    if (pelicula.rating < 7 && pelicula.rating > 4) {
-      colorRating = "orange";
-    } else if (pelicula.rating <= 4) {
-      colorRating = "red";
-    }
+peliculas.forEach((pelicula) => {
+  let colorRating = "green";
+  if (pelicula.rating < 7 && pelicula.rating > 4) {
+    colorRating = "orange";
+  } else if (pelicula.rating <= 4) {
+    colorRating = "red";
+  }
 
-    const movieCard = `<a href="/movie.html" class="movie-card">
+  const movieCard = `<a href="/movie.html" class="movie-card">
           <img src="${pelicula.poster}" alt="${pelicula.title}">
           <div class="movie-card-info">
             <h3>${pelicula.title}</h3>
@@ -69,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
           </div>
           </a>`;
 
-    movieContainer.insertAdjacentHTML("beforeend", movieCard);
-  });
+  document
+    .getElementById("movieContainer")
+    .insertAdjacentHTML("beforeend", movieCard);
 });

@@ -123,6 +123,7 @@ footer p a i {
 }
 
 nav {
+  min-height: 80px;
   max-width: 1720px;
   margin: 0 auto;
   display: grid;
@@ -174,10 +175,18 @@ nav a:hover {
 .logo {
   padding-top: 1rem;
   padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
   max-height: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo img {
+    max-height: 40px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
