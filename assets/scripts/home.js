@@ -46,8 +46,6 @@ const peliculas = [
   },
 ];
 
-// let movieContainer = document.getElementById("movieContainer");
-
 peliculas.forEach((pelicula) => {
   let colorRating = "green";
   if (pelicula.rating < 7 && pelicula.rating > 4) {

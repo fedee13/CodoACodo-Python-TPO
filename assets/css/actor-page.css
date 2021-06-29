@@ -51,3 +51,7 @@
   text-indent: 5px;
   font-size: 0.95rem;
 }
+
+.table-codo-a-codo tbody td.td-image img {
+  max-height: 100px;
+}

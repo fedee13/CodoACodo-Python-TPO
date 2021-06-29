@@ -223,4 +223,5 @@ nav a:hover {
 
 .table-codo-a-codo tbody tr td.td-image img {
   vertical-align: middle;
+  min-height: 60px;
 }
